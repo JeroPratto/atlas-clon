@@ -1,0 +1,17 @@
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid rgba(0, 0, 0, 0.12);
+	border-radius: 4rem;
+	color: #141414;
+	background-color: transparent;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.btn:hover {
+	background-color: #173ae5;
+	border-color: #173ae5;
+	color: #fff;
+}

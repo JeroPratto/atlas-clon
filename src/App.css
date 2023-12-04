@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
+:root {
+	--font-family: 'Roboto', sans-serif, system-ui, -apple-system,
+		BlinkMacSystemFont, 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+html {
+	-webkit-tap-highlight-color: transparent;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: var(--font-family);
+	scroll-behavior: smooth;
+}
+.container {
+	width: 100%;
+	height: 300vh;
+}
+
+li {
+	list-style-type: none;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}

@@ -1,0 +1,96 @@
+.container {
+	height: auto;
+	width: 100%;
+	background-image: linear-gradient(
+		#e8e0d9,
+		#e7cdd3,
+		#cdd5df,
+		#e8e0d9,
+		#e7cdd3
+	);
+	animation: grandient-fade 40s linear infinite alternate;
+	background-position: 0 0;
+	background-size: 100% 300%;
+	padding: 8rem 0 16rem 0;
+}
+.containerNoLimits {
+	margin-bottom: calc(5svh + 2rem);
+	font-size: 109px;
+	line-height: 110%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	position: relative;
+}
+.containerNoLimits p {
+	width: 100%;
+	mix-blend-mode: overlay;
+}
+.overNoLimits {
+	position: absolute;
+	opacity: 0.5;
+	top: 0;
+	left: 0;
+}
+.containerVideo {
+	height: auto;
+	background-color: transparent;
+}
+
+.video {
+	object-fit: cover;
+	transform: translate(-18px);
+	max-width: 100%;
+	margin-bottom: calc(5svh + 2rem);
+}
+.description {
+	font-size: 45px;
+	line-height: 120%;
+	width: calc(100% - 3rem);
+	max-width: 958px;
+	text-align: center;
+	margin: 0 auto;
+	color: #000;
+	position: relative;
+}
+.mainDescription,
+.overDescription {
+	mix-blend-mode: overlay;
+}
+.overDescription {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.5;
+}
+.secondaryDescription {
+	width: 100%;
+	max-width: 928px;
+	font-weight: 500;
+}
+
+@media screen and (max-width: 900px) {
+	.container {
+		padding: 8rem 0 11rem 0;
+		background-image: radial-gradient(circle, #cdd5df, #e7cdd3, #e8e0d9);
+	}
+	.containerNoLimits {
+		font-size: 75px;
+		line-height: 90px;
+	}
+	.description {
+		font-size: 27px;
+	}
+	.video {
+		height: 350px;
+	}
+}
+
+@keyframes grandient-fade {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 0 100%;
+	}
+}

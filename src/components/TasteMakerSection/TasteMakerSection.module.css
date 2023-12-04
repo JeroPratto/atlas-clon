@@ -1,0 +1,97 @@
+.container {
+	width: 100%;
+	background-color: #141414;
+	padding: 16rem 1.5rem 232px 1.5rem;
+}
+.containerMain {
+	margin: 0 auto;
+	max-width: 928px;
+	text-align: center;
+}
+.title {
+	font-size: 97px;
+	line-height: 103px;
+	margin-bottom: 104px;
+	color: #f7f7f2;
+	font-weight: 500;
+}
+.subtitle,
+.subtitleDescription {
+	font-size: 36px;
+	letter-spacing: -0.36px;
+	line-height: 140%;
+	color: #f7f7f2;
+	font-weight: 500;
+}
+.subtitleDescription {
+	color: hsla(0, 0%, 100%, 0.4);
+	margin-bottom: 11rem;
+}
+.containerHorses {
+	margin: 0 auto;
+	margin-bottom: 11rem;
+}
+
+.horses {
+	max-width: 100%;
+	height: 600px;
+	object-fit: cover;
+}
+.mobileOnly {
+	display: none;
+	color: #727272;
+	text-align: center;
+	font-size: 10px;
+	line-height: 15px;
+	letter-spacing: 1px;
+}
+
+@media screen and (max-width: 900px) {
+	.container {
+		padding: 6rem 1.5rem;
+	}
+	.containerMain {
+		max-width: 640px;
+	}
+	.title {
+		font-size: 67px;
+		line-height: 100%;
+	}
+	.subtitle,
+	.subtitleDescription {
+		font-size: 23px;
+	}
+	.subtitleDescription {
+		font-weight: 400;
+		margin-bottom: 6rem;
+	}
+	.containerHorses {
+		margin-bottom: 5rem;
+	}
+	.horses {
+		height: 478px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.container {
+		background-color: #f7f7f2;
+	}
+	.title,
+	.subtitle {
+		color: #141414;
+	}
+	.subtitleDescription {
+		color: rgba(0, 0, 0, 0.5);
+	}
+	.containerHorses,
+	.horses {
+		background-color: #141414;
+		border-radius: 20px;
+		margin-bottom: 1rem;
+	}
+	.mobileOnly {
+		margin-bottom: 5rem;
+		display: block;
+	}
+}

@@ -1,0 +1,16 @@
+.containerNavbar {
+	position: fixed;
+	top: 1rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 912px;
+	max-width: calc(100% - 4em);
+	background-color: #f0f0f070;
+	border-radius: 1rem;
+	box-shadow: 2px 4px 20px #0000000a;
+	cursor: pointer;
+	box-sizing: content-box;
+	z-index: 100;
+	user-select: none;
+	backdrop-filter: blur(36px);
+}

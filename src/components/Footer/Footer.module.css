@@ -1,0 +1,47 @@
+.container {
+	padding: 4rem 1.5rem;
+	background-color: #fff;
+	width: 100%;
+}
+.containerLists {
+	display: flex;
+	gap: 4rem;
+	max-width: 928px;
+	margin: 0 auto;
+	width: 100%;
+	border-bottom: 1px solid #001391;
+	position: relative;
+}
+.list {
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: 500;
+	color: #001391;
+	display: flex;
+	justify-content: start;
+	align-items: start;
+	flex-direction: column;
+	gap: 0.75rem;
+	margin-bottom: 2.5rem;
+}
+.listTitle {
+	color: #727272;
+}
+
+.atlasIcon {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.women {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+@media screen and (max-width: 900px) {
+	.containerLists {
+		flex-direction: column;
+		gap: 0;
+	}
+}
